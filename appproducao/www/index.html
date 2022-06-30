@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APProdução</title>
+    <link rel="stylesheet" href="material-icon/material.css">
+    <link rel="stylesheet" href="materialize-css/dist/css/materialize.min.css">
+</head>
+
+<body class="blue lighten-5 blue-text darken-1-text">
+    <div class="container">
+        <h3 class="center"><strong>APProdução</strong></h3>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">content_cut</i>
+                <input type="text" id="produto">
+                <label for="produto">PRODUTO</label>
+            </div>
+
+            <div class="input-field col s12">
+                <i class="material-icons prefix">assignment</i>
+                <input type="number" id="produzido">
+                <label for="produzido">PRODUZIDO</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">trending_up</i>
+                <label for="meta">META</label>
+            </div>
+            <div class="input-field col s12">
+                <input type="range" min="0" max="50" id="meta">
+            </div>
+            <div class="row center">
+                <div class="col s6">
+                    <button type="button" class="blue darken-3 waves-effect waves-light btn" id="salvar"><i
+                            class="material-icons left">save</i>SALVAR</button>
+                </div>
+                <div class="col s6">
+                    <button type="button" class="grey darken-3 waves-effect waves-light btn" id="limpar"><i
+                            class="material-icons left">delete</i>LIMPAR</button>
+                </div>
+            </div>
+            <table class="striped responsive-table">
+                <thead>
+                    <tr>
+                        <th>PRODUTO</th>
+                        <th>QTD PRODUZIDO</th>
+                        <th>META</th>
+                        <th>DÉFICIT</th>
+                        <th>AÇÕES</th>
+                    </tr>
+                </thead>
+                <tbody id="controle-producao">
+                </tbody>
+            </table>
+        </div>
+        <h1>Dialogs</h1>        
+        <button type="button" onclick="dialogAlert();">alerta</button>
+        <button type="button" onclick="dialogConfirm();">confirmação</button>
+        <button type="button" onclick="dialogPrompt();">prompt</button>
+        <button type="button" onclick="dialogBeep();">beep</button>
+        
+        <script src="materialize-css/dist/js/materialize.min.js"></script>
+        <script src="js/app.js"></script>
+</body>
+
+</html>

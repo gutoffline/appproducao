@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.gutoxavier.appproducao" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>APProdução</name>
+    <description>APP para controle de produção</description>
+    <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <icon src="res/icon.png" />
+    <preference name="SplashScreen" value="screen" />
+    <splash src="res/splash.png" />
+
+    <preference name="Fullscreen" value="true" />
+
+    <plugin name="cordova-plugin-dialogs" spec="^2.0.1" />
+
+</widget>
